@@ -15,7 +15,7 @@ namespace WeatherStation.BusinessLogic
             this.pressure = pressure;
         }
 
-        public void Display(IReport report)
+        public void Display(IView report)
         {
             report.Display(pressure, temperature, humidity);
         }

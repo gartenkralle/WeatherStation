@@ -4,7 +4,7 @@ using WeatherStation.View.Interfaces;
 
 namespace WeatherStation.View
 {
-    class MainView : IReport
+    class MainView : IView
     {
         private readonly IOutput output;
 
