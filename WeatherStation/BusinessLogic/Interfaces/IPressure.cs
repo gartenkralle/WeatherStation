@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WeatherStation.BusinessLogic
+namespace WeatherStation.BusinessLogic.Interfaces
 {
     public interface IPressure
     {

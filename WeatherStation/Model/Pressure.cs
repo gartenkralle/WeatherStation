@@ -1,5 +1,5 @@
 ﻿using System;
-using WeatherStation.BusinessLogic;
+using WeatherStation.BusinessLogic.Interfaces;
 using WeatherStation.HardwareAbstraction.Interfaces;
 
 namespace WeatherStation.Model

@@ -1,4 +1,4 @@
-﻿using WeatherStation.View;
+﻿using WeatherStation.View.Interfaces;
 
 namespace WeatherStation.Output
 {

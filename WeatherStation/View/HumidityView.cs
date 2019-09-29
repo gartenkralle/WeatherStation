@@ -1,5 +1,6 @@
 ﻿using System;
-using WeatherStation.BusinessLogic;
+using WeatherStation.BusinessLogic.Interfaces;
+using WeatherStation.View.Interfaces;
 
 namespace WeatherStation.View
 {

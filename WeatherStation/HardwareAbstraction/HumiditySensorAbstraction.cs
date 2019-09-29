@@ -1,11 +1,12 @@
 ﻿using System;
+using WeatherStation.Hardware;
 using WeatherStation.HardwareAbstraction.Interfaces;
 
 namespace WeatherStation.HardwareAbstraction
 {
-    class HumiditySensorAbstraction : IHumiditySensorAbstraction
+    internal class HumiditySensorAbstraction : IHumiditySensorAbstraction
     {
-        private readonly Hardware hardware;
+        private readonly Helper.Hardware hardware;
 
         public event Action<ValueType> Changed;
 
@@ -19,7 +20,7 @@ namespace WeatherStation.HardwareAbstraction
 
         public HumiditySensorAbstraction()
         {
-            hardware = new Hardware();
+            hardware = new Helper.Hardware();
             hardware.Poll(() => HumiditySensor.Data, Humidity_Changed);
         }
 

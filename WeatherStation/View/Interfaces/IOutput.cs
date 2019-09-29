@@ -1,4 +1,4 @@
-﻿namespace WeatherStation.View
+﻿namespace WeatherStation.View.Interfaces
 {
     public interface IOutput
     {

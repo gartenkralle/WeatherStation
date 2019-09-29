@@ -1,12 +1,12 @@
 ﻿using System;
-using WeatherStation;
+using WeatherStation.Hardware;
 using WeatherStation.HardwareAbstraction.Interfaces;
 
 namespace WeatherStation.HardwareAbstraction
 {
     class PressureSensorAbstraction : IPressureSensorAbstraction
     {
-        private readonly Hardware hardware;
+        private readonly Helper.Hardware hardware;
         public event Action<ValueType> Changed;
 
         public double Data
@@ -19,7 +19,7 @@ namespace WeatherStation.HardwareAbstraction
 
         public PressureSensorAbstraction()
         {
-            hardware = new Hardware();
+            hardware = new Helper.Hardware();
             hardware.Poll(() => PressureSensor.Data, PressureChanged);
         }
 

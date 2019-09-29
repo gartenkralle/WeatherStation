@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace WeatherStation
+namespace WeatherStation.Hardware
 {
     internal static class TemperatureSensor
     {

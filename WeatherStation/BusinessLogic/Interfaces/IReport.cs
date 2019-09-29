@@ -1,6 +1,4 @@
-﻿using WeatherStation.Model;
-
-namespace WeatherStation.BusinessLogic
+﻿namespace WeatherStation.BusinessLogic.Interfaces
 {
     public interface IReport
     {

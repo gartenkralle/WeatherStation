@@ -1,4 +1,6 @@
-﻿namespace WeatherStation.BusinessLogic
+﻿using WeatherStation.BusinessLogic.Interfaces;
+
+namespace WeatherStation.BusinessLogic
 {
     public class WeatherController
     {
