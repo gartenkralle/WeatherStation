@@ -10,17 +10,13 @@ namespace WeatherStation
     {
         static void Main()
         {
-            //WeatherController weather = new WeatherController(
-            //    new HumidityModel(new HumiditySensorAbstraction()), 
-            //    new TemperatureModel(new TemperatureSensorAbstraction()), 
-            //    new PressureModel(new PressureSensorAbstraction()));
+            WeatherController weather = new WeatherController(
+                new HumidityModel(new HumiditySensorAbstraction()),
+                new TemperatureModel(new TemperatureSensorAbstraction()),
+                new PressureModel(new PressureSensorAbstraction()));
 
-            //weather.Display(new MainView(new Output.ConsoleOutput()));
+            weather.Display(new MainView(new Output.ConsoleOutput()));
 
-            HumidityController humidity = new HumidityController(
-                new HumidityModel(new HumiditySensorAbstraction()));
-
-            humidity.Display(new HumidityView(new Output.ConsoleOutput()));
             Console.ReadKey();
         }
     }
