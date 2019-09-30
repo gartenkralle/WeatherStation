@@ -1,8 +1,8 @@
 ﻿using System;
 using WeatherStation.View;
-using WeatherStation.BusinessLogic;
+using WeatherStation.Controller;
 using WeatherStation.Model;
-using WeatherStation.HardwareAbstraction;
+using WeatherStation.SensorAbstraction;
 
 namespace WeatherStation
 {
@@ -10,9 +10,17 @@ namespace WeatherStation
     {
         static void Main()
         {
-            WeatherController controller = new WeatherController(new Humidity(new HumiditySensorAbstraction()), new Temperature(new TemperatureSensorAbstraction()), new Pressure(new PressureSensorAbstraction()));
-            controller.Display(new MainView(new Output.Console()));
+            //WeatherController weather = new WeatherController(
+            //    new HumidityModel(new HumiditySensorAbstraction()), 
+            //    new TemperatureModel(new TemperatureSensorAbstraction()), 
+            //    new PressureModel(new PressureSensorAbstraction()));
 
+            //weather.Display(new MainView(new Output.ConsoleOutput()));
+
+            HumidityController humidity = new HumidityController(
+                new HumidityModel(new HumiditySensorAbstraction()));
+
+            humidity.Display(new HumidityView(new Output.ConsoleOutput()));
             Console.ReadKey();
         }
     }

@@ -3,7 +3,7 @@ using WeatherStation.View.Interfaces;
 
 namespace WeatherStation.Output
 {
-    class File : IOutput
+    class FileOutput : IOutput
     {
         public void WriteLine(string s)
         {

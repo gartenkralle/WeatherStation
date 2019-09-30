@@ -1,14 +1,14 @@
 ﻿using System;
-using WeatherStation.BusinessLogic.Interfaces;
-using WeatherStation.HardwareAbstraction.Interfaces;
+using WeatherStation.Controller.Interfaces.Model;
+using WeatherStation.SensorAbstraction.Interfaces.SensorAbstraction;
 
 namespace WeatherStation.Model
 {
-    public class Temperature : ITemperature
+    public class TemperatureModel : ITemperatureModel
     {
         private readonly ITemperatureSensorAbstraction temperature;
 
-        public Temperature(ITemperatureSensorAbstraction temperature)
+        public TemperatureModel(ITemperatureSensorAbstraction temperature)
         {
             this.temperature = temperature;
             temperature.Changed += Temperature_Changed;

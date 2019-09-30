@@ -2,7 +2,7 @@
 
 namespace WeatherStation.Output
 {
-    class Console : IOutput
+    class ConsoleOutput : IOutput
     {
         public void WriteLine(string s)
         {

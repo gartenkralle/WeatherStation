@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace WeatherStation.BusinessLogic.Interfaces
+namespace WeatherStation.Controller.Interfaces.Model
 {
-    public interface IHumidity
+    public interface ITemperatureModel
     {
         event Action<ValueType> Changed;
 

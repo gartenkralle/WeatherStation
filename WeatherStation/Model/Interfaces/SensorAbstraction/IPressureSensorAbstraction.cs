@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WeatherStation.HardwareAbstraction.Interfaces
+namespace WeatherStation.SensorAbstraction.Interfaces.SensorAbstraction
 {
     public interface IPressureSensorAbstraction
     {

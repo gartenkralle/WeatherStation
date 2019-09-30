@@ -1,10 +1,11 @@
 ﻿using System;
-using WeatherStation.BusinessLogic.Interfaces;
+using WeatherStation.Controller.Interfaces.Model;
+using WeatherStation.Controller.Interfaces.View;
 using WeatherStation.View.Interfaces;
 
 namespace WeatherStation.View
 {
-    class MainView : IView
+    class MainView : IMainView
     {
         private readonly IOutput output;
 
@@ -13,7 +14,7 @@ namespace WeatherStation.View
             this.output = output;
         }
 
-        public void Display(IPressure pressure, ITemperature temperature, IHumidity humidity)
+        public void Display(IPressureModel pressure, ITemperatureModel temperature, ITemperatureModel humidity)
         {
             output.WriteLine("Initial Humunidity: " + humidity.Data);
             output.WriteLine("Initial Temperature: " + temperature.Data);

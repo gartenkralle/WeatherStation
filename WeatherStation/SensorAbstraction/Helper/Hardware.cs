@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace WeatherStation.HardwareAbstraction.Helper
+namespace WeatherStation.SensorAbstraction.Helper
 {
     internal class Hardware
     {

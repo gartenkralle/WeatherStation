@@ -1,8 +1,8 @@
 ﻿using System;
-using WeatherStation.Hardware;
-using WeatherStation.HardwareAbstraction.Interfaces;
+using WeatherStation.Sensor;
+using WeatherStation.SensorAbstraction.Interfaces.SensorAbstraction;
 
-namespace WeatherStation.HardwareAbstraction
+namespace WeatherStation.SensorAbstraction
 {
     internal class HumiditySensorAbstraction : IHumiditySensorAbstraction
     {

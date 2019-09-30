@@ -3,7 +3,7 @@ using WeatherStation.View.Interfaces;
 
 namespace WeatherStation.Output
 {
-    class Printer : IOutput
+    class PrinterOutput : IOutput
     {
         public void WriteLine(string s)
         {
