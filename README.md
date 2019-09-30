@@ -2,7 +2,9 @@
 
 This prototype is showing:
 
-- dependency inversion
-- dependency injection
-- model view controller
 - hardware abstraction
+- dependency inversion pattern
+- dependency injection pattern
+- model view controller pattern
+- strategy pattern
+
