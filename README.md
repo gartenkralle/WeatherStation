@@ -6,5 +6,5 @@ This prototype is showing:
 - dependency inversion pattern
 - dependency injection pattern
 - model view controller pattern
+- observer pattern
 - strategy pattern
-
