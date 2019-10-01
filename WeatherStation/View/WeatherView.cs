@@ -5,11 +5,11 @@ using WeatherStation.View.Interfaces;
 
 namespace WeatherStation.View
 {
-    class MainView : IMainView
+    class WeatherView : IWeatherView
     {
         private readonly IOutput output;
 
-        public MainView(IOutput output)
+        public WeatherView(IOutput output)
         {
             this.output = output;
         }

@@ -16,7 +16,7 @@ namespace WeatherStation.Controller
             this.pressure = pressure;
         }
 
-        public void Display(IMainView report)
+        public void Display(IWeatherView report)
         {
             report.Display(pressure, temperature, humidity);
         }

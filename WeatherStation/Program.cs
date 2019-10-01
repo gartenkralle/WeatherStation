@@ -25,7 +25,7 @@ namespace WeatherStation
                 new TemperatureModel(new TemperatureSensorAbstraction()),
                 new PressureModel(new PressureSensorAbstraction()));
 
-            weather.Display(new MainView(new Output.ConsoleOutput()));
+            weather.Display(new WeatherView(new Output.ConsoleOutput()));
         }
 
         static void ShowTemperature()

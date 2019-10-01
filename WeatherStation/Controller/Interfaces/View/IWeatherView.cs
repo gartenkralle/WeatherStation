@@ -2,7 +2,7 @@
 
 namespace WeatherStation.Controller.Interfaces.View
 {
-    public interface IMainView
+    public interface IWeatherView
     {
         void Display(IPressureModel pressure, ITemperatureModel temperature, ITemperatureModel humidity);
     }
