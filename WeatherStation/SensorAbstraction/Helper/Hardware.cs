@@ -8,7 +8,7 @@ namespace WeatherStation.SensorAbstraction.Helper
     {
         ValueType lastValue;
 
-        public void Poll(Func<ValueType> value, Action<ValueType> valueChanged)
+        public void Poll(Func<ValueType> getLastValue, Action<ValueType> valueChanged)
         {
             int delay = 100;
 
@@ -16,18 +16,18 @@ namespace WeatherStation.SensorAbstraction.Helper
             {
                 CancellationToken cancellationToken = cancellationTokenSource.Token;
                 
-                lastValue = value();
+                lastValue = getLastValue();
 
                 Task listener = Task.Factory.StartNew(() =>
                 {
                     while (!cancellationToken.IsCancellationRequested)
                     {
-                        if (!lastValue.Equals(value()))
+                        if (!lastValue.Equals(getLastValue()))
                         {
-                            valueChanged?.Invoke(value());
+                            valueChanged?.Invoke(getLastValue());
                         }
 
-                        lastValue = value();
+                        lastValue = getLastValue();
                         Thread.Sleep(delay);
                     }
                 }, cancellationToken, TaskCreationOptions.LongRunning, TaskScheduler.Default);
