@@ -4,7 +4,7 @@ using WeatherStation.SensorAbstraction.Interfaces.SensorAbstraction;
 
 namespace WeatherStation.Model
 {
-    public class HumidityModel : ITemperatureModel
+    public class HumidityModel : IHumidityModel
     {
         private readonly IHumiditySensorAbstraction humidity;
 

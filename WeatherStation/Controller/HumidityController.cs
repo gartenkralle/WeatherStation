@@ -5,9 +5,9 @@ namespace WeatherStation.Controller
 {
     public class HumidityController
     {
-        private readonly ITemperatureModel humidity;
+        private readonly IHumidityModel humidity;
 
-        public HumidityController(ITemperatureModel humidity)
+        public HumidityController(IHumidityModel humidity)
         {
             this.humidity = humidity;
         }

@@ -14,7 +14,7 @@ namespace WeatherStation.View
             this.output = output;
         }
 
-        public void Display(ITemperatureModel humidity)
+        public void Display(IHumidityModel humidity)
         {
             output.WriteLine("Initial Humunidity: " + humidity.Data);
 

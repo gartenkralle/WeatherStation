@@ -4,6 +4,6 @@ namespace WeatherStation.Controller.Interfaces.View
 {
     public interface IHumidityView
     {
-        void Display(ITemperatureModel humidity);
+        void Display(IHumidityModel humidity);
     }
 }

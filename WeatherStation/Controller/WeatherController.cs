@@ -5,11 +5,11 @@ namespace WeatherStation.Controller
 {
     public class WeatherController
     {
-        private readonly ITemperatureModel humidity;
+        private readonly IHumidityModel humidity;
         private readonly ITemperatureModel temperature;
         private readonly IPressureModel pressure;
 
-        public WeatherController(ITemperatureModel humidity, ITemperatureModel temperature, IPressureModel pressure)
+        public WeatherController(IHumidityModel humidity, ITemperatureModel temperature, IPressureModel pressure)
         {
             this.humidity = humidity;
             this.temperature = temperature;
