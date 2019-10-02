@@ -4,7 +4,7 @@ using WeatherStation.SensorAbstraction.Interfaces.SensorAbstraction;
 
 namespace WeatherStation.SensorAbstraction
 {
-    internal class HumiditySensorAbstraction : IHumiditySensorAbstraction
+    public class HumiditySensorAbstraction : IHumiditySensorAbstraction
     {
         private readonly Helper.Hardware hardware;
 

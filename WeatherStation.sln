@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherStation", "WeatherStation\WeatherStation.csproj", "{31EAE4C0-04BC-4AF2-B880-9D8343FB56CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{44FAD755-FD69-4297-BD4C-9EC2F92C8A1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "WindowsFormsApp\WindowsFormsApp.csproj", "{9A26CE01-1ABA-4065-B421-187466304663}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStation", "ClassLibrary2\WeatherStation.csproj", "{6E3E38BD-F887-444F-A3D3-2F9499018591}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{31EAE4C0-04BC-4AF2-B880-9D8343FB56CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31EAE4C0-04BC-4AF2-B880-9D8343FB56CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31EAE4C0-04BC-4AF2-B880-9D8343FB56CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31EAE4C0-04BC-4AF2-B880-9D8343FB56CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44FAD755-FD69-4297-BD4C-9EC2F92C8A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44FAD755-FD69-4297-BD4C-9EC2F92C8A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44FAD755-FD69-4297-BD4C-9EC2F92C8A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44FAD755-FD69-4297-BD4C-9EC2F92C8A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A26CE01-1ABA-4065-B421-187466304663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A26CE01-1ABA-4065-B421-187466304663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A26CE01-1ABA-4065-B421-187466304663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A26CE01-1ABA-4065-B421-187466304663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E3E38BD-F887-444F-A3D3-2F9499018591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E3E38BD-F887-444F-A3D3-2F9499018591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E3E38BD-F887-444F-A3D3-2F9499018591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E3E38BD-F887-444F-A3D3-2F9499018591}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

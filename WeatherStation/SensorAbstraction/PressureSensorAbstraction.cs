@@ -4,7 +4,7 @@ using WeatherStation.SensorAbstraction.Interfaces.SensorAbstraction;
 
 namespace WeatherStation.SensorAbstraction
 {
-    class PressureSensorAbstraction : IPressureSensorAbstraction
+    public class PressureSensorAbstraction : IPressureSensorAbstraction
     {
         private readonly Helper.Hardware hardware;
         public event Action<ValueType> Changed;
