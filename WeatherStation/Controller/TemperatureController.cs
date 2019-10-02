@@ -12,9 +12,9 @@ namespace WeatherStation.Controller
             this.temperature = temperature;
         }
 
-        public void Display(ITemperatureView report)
+        public void Display(ITemperatureView view)
         {
-            report.Display(temperature);
+            view.Display(temperature);
         }
     }
 }

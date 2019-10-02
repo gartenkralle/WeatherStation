@@ -3,7 +3,7 @@ using WeatherStation.Controller.Interfaces.Model;
 using WeatherStation.Controller.Interfaces.View;
 using WeatherStation.View.Interfaces;
 
-namespace WeatherStation.View
+namespace WeatherStation.View.Gui
 {
     public class TemperatureView : ITemperatureView
     {
@@ -16,14 +16,14 @@ namespace WeatherStation.View
 
         public void Display(ITemperatureModel temperature)
         {
-            output.WriteLine("Initial Temperature: " + temperature.Data);
+            output.Write(temperature.Data.ToString());
 
             temperature.Changed += Temperature_Changed;
         }
 
         private void Temperature_Changed(ValueType data)
         {
-            output.WriteLine("Spontaeous Temperature: " + data);
+            output.Write(data.ToString());
         }
     }
 }

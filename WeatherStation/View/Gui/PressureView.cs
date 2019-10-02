@@ -3,7 +3,7 @@ using WeatherStation.Controller.Interfaces.Model;
 using WeatherStation.Controller.Interfaces.View;
 using WeatherStation.View.Interfaces;
 
-namespace WeatherStation.View
+namespace WeatherStation.View.Gui
 {
     public class PressureView : IPressureView
     {
@@ -16,14 +16,14 @@ namespace WeatherStation.View
 
         public void Display(IPressureModel pressure)
         {
-            output.WriteLine("Initial Pressure: " + pressure.Data);
+            output.Write(pressure.Data.ToString());
 
             pressure.Changed += Pressure_Changed;
         }
 
         private void Pressure_Changed(ValueType data)
         {
-            output.WriteLine("Spontaeous Pressure: " + data);
+            output.Write(data.ToString());
         }
     }
 }

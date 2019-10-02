@@ -12,9 +12,9 @@ namespace WeatherStation.Controller
             this.pressure = pressure;
         }
 
-        public void Display(IPressureView report)
+        public void Display(IPressureView view)
         {
-            report.Display(pressure);
+            view.Display(pressure);
         }
     }
 }

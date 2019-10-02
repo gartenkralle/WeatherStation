@@ -3,7 +3,7 @@ using WeatherStation.Controller.Interfaces.Model;
 using WeatherStation.Controller.Interfaces.View;
 using WeatherStation.View.Interfaces;
 
-namespace WeatherStation.View
+namespace WeatherStation.View.Console
 {
     public class HumidityView : IHumidityView
     {
@@ -16,14 +16,16 @@ namespace WeatherStation.View
 
         public void Display(IHumidityModel humidity)
         {
-            output.WriteLine("Initial Humunidity: " + humidity.Data);
+            output.Write("Humidity: ");
+            output.WriteLine(humidity.Data.ToString());
 
             humidity.Changed += Humidity_Changed;
         }
 
         private void Humidity_Changed(ValueType data)
         {
-            output.WriteLine("Spontaeous Humunidity: " + data);
+            output.Write("Humidity: ");
+            output.WriteLine(data.ToString());
         }
     }
 }

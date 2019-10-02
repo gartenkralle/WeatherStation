@@ -12,9 +12,9 @@ namespace WeatherStation.Controller
             this.humidity = humidity;
         }
 
-        public void Display(IHumidityView report)
+        public void Display(IHumidityView view)
         {
-            report.Display(humidity);
+            view.Display(humidity);
         }
     }
 }

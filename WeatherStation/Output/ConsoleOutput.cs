@@ -1,12 +1,19 @@
-﻿using WeatherStation.View.Interfaces;
+﻿using System;
+using WeatherStation.View.Interfaces;
 
 namespace WeatherStation.Output
 {
     public class ConsoleOutput : IOutput
     {
+        public void Write(string s)
+        {
+            Console.Write(s);
+        }
+
         public void WriteLine(string s)
         {
-            System.Console.WriteLine(s);
+            Console.WriteLine(s);
         }
     }
 }
+

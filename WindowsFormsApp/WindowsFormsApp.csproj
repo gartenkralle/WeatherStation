@@ -80,8 +80,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary2\WeatherStation.csproj">
-      <Project>{6e3e38bd-f887-444f-a3d3-2f9499018591}</Project>
+    <ProjectReference Include="..\WeatherStation\WeatherStation.csproj">
+      <Project>{fc09ec34-d029-48e5-9d77-95f4c5707011}</Project>
       <Name>WeatherStation</Name>
     </ProjectReference>
   </ItemGroup>
