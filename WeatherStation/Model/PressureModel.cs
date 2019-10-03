@@ -1,6 +1,6 @@
 ﻿using System;
 using WeatherStation.Controller.Interfaces.Model;
-using WeatherStation.SensorAbstraction.Interfaces.SensorAbstraction;
+using WeatherStation.Model.Interfaces.SensorAbstraction;
 
 namespace WeatherStation.Model
 {
