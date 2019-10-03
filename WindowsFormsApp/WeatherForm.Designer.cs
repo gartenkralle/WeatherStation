@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp
 {
-    partial class Form
+    partial class WeatherForm
     {
         /// <summary>
         /// Required designer variable.
@@ -84,7 +84,7 @@
             this.lbHumidity.TabIndex = 5;
             this.lbHumidity.Text = "Humidity:";
             // 
-            // Form
+            // WeatherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,8 +95,8 @@
             this.Controls.Add(this.tbHumidity);
             this.Controls.Add(this.tbPressure);
             this.Controls.Add(this.tbTemperature);
-            this.Name = "Form";
-            this.Text = "Form1";
+            this.Name = "WeatherForm";
+            this.Text = "Weather Form";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

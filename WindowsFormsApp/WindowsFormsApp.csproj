@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form.cs">
+    <Compile Include="WeatherForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form.Designer.cs">
-      <DependentUpon>Form.cs</DependentUpon>
+    <Compile Include="WeatherForm.Designer.cs">
+      <DependentUpon>WeatherForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form.resx">
-      <DependentUpon>Form.cs</DependentUpon>
+    <EmbeddedResource Include="WeatherForm.resx">
+      <DependentUpon>WeatherForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,25 +80,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Controller\Controller.csproj">
+    <ProjectReference Include="..\Controller\Weather.Controller.csproj">
       <Project>{57adc03b-c34d-42e5-b0da-4d8b7775cad9}</Project>
-      <Name>Controller</Name>
+      <Name>Weather.Controller</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataModel\Model.csproj">
-      <Project>{b24b8309-bc33-4c60-9ca6-dfaa7d96721c}</Project>
-      <Name>Model</Name>
+    <ProjectReference Include="..\Model\Weather.Model.csproj">
+      <Project>{B24B8309-BC33-4C60-9CA6-DFAA7D96721C}</Project>
+      <Name>Weather.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SensorAbstraction\SensorAbstraction.csproj">
+    <ProjectReference Include="..\SensorAbstraction\Weather.SensorAbstraction.csproj">
       <Project>{a2daf725-2b15-4f6a-8788-58b8e0daaa37}</Project>
-      <Name>SensorAbstraction</Name>
+      <Name>Weather.SensorAbstraction</Name>
     </ProjectReference>
-    <ProjectReference Include="..\View\View.csproj">
+    <ProjectReference Include="..\View\Weather.View.csproj">
       <Project>{ba4ced93-a27e-49b4-b6fe-7f153165f7fb}</Project>
-      <Name>View</Name>
+      <Name>Weather.View</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WinFormsOutput\WinFormsOutput.csproj">
+    <ProjectReference Include="..\WinFormsOutput\Weather.WinFormsOutput.csproj">
       <Project>{fc09ec34-d029-48e5-9d77-95f4c5707011}</Project>
-      <Name>WinFormsOutput</Name>
+      <Name>Weather.WinFormsOutput</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

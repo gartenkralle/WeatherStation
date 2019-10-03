@@ -7,9 +7,9 @@ using WeatherStation.WinFormsOutput;
 
 namespace WindowsFormsApp
 {
-    public partial class Form : System.Windows.Forms.Form
+    public partial class WeatherForm : System.Windows.Forms.Form
     {
-        public Form()
+        public WeatherForm()
         {
             InitializeComponent();
         }
