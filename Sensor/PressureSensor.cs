@@ -2,9 +2,9 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace WeatherStation.Sensor
+namespace Sensor
 {
-    internal static class PressureSensor
+    public static class PressureSensor
     {
         private readonly static Random random;
 

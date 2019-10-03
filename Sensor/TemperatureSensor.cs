@@ -2,15 +2,15 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace WeatherStation.Sensor
+namespace Sensor
 {
-    internal static class HumiditySensor
+    public static class TemperatureSensor
     {
         private readonly static Random random;
 
         public static double Data { get; private set; }
 
-        static HumiditySensor()
+        static TemperatureSensor()
         {
             random = new Random(DateTime.Now.Millisecond);
             Data = random.NextDouble();

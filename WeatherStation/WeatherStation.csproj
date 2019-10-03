@@ -65,9 +65,6 @@
     <Compile Include="SensorAbstraction\HumiditySensorAbstraction.cs" />
     <Compile Include="SensorAbstraction\PressureSensorAbstraction.cs" />
     <Compile Include="SensorAbstraction\TemperatureSensorAbstraction.cs" />
-    <Compile Include="Sensor\HumiditySensor.cs" />
-    <Compile Include="Sensor\PressureSensor.cs" />
-    <Compile Include="Sensor\TemperatureSensor.cs" />
     <Compile Include="View\Console\HumidityView.cs" />
     <Compile Include="View\Console\PressureView.cs" />
     <Compile Include="View\Console\TemperatureView.cs" />
@@ -75,6 +72,12 @@
     <Compile Include="View\Gui\PressureView.cs" />
     <Compile Include="View\Gui\TemperatureView.cs" />
     <Compile Include="View\Interfaces\IOutput.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sensor\Sensor.csproj">
+      <Project>{3c8b6176-04a6-401e-aa2a-56001f14b733}</Project>
+      <Name>Sensor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
