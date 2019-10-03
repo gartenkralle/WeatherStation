@@ -7,8 +7,8 @@
     <ProjectGuid>{FC09EC34-D029-48E5-9D77-95F4C5707011}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WeatherStation</RootNamespace>
-    <AssemblyName>WeatherStation</AssemblyName>
+    <RootNamespace>WinFormsOutput</RootNamespace>
+    <AssemblyName>WinFormsOutput</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,41 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\HumidityController.cs" />
-    <Compile Include="Controller\Interfaces\Model\IHumidityModel.cs" />
-    <Compile Include="Controller\Interfaces\Model\IPressureModel.cs" />
-    <Compile Include="Controller\Interfaces\Model\ITemperatureModel.cs" />
-    <Compile Include="Controller\Interfaces\View\IHumidityView.cs" />
-    <Compile Include="Controller\Interfaces\View\IPressureView.cs" />
-    <Compile Include="Controller\Interfaces\View\ITemperatureView.cs" />
-    <Compile Include="Controller\Interfaces\View\IWeatherView.cs" />
-    <Compile Include="Controller\PressureController.cs" />
-    <Compile Include="Controller\TemperatureController.cs" />
-    <Compile Include="Model\HumidityModel.cs" />
-    <Compile Include="Model\Interfaces\SensorAbstraction\IHumiditySensorAbstraction.cs" />
-    <Compile Include="Model\Interfaces\SensorAbstraction\IPressureSensorAbstraction.cs" />
-    <Compile Include="Model\Interfaces\SensorAbstraction\ITemperatureSensorAbstraction.cs" />
-    <Compile Include="Model\PressureModel.cs" />
-    <Compile Include="Model\TemperatureModel.cs" />
-    <Compile Include="Output\ConsoleOutput.cs" />
-    <Compile Include="Output\WinFormsControlOutput.cs" />
+    <Compile Include="ControlOutput.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SensorAbstraction\Helper\Hardware.cs" />
-    <Compile Include="SensorAbstraction\HumiditySensorAbstraction.cs" />
-    <Compile Include="SensorAbstraction\PressureSensorAbstraction.cs" />
-    <Compile Include="SensorAbstraction\TemperatureSensorAbstraction.cs" />
-    <Compile Include="View\Console\HumidityView.cs" />
-    <Compile Include="View\Console\PressureView.cs" />
-    <Compile Include="View\Console\TemperatureView.cs" />
-    <Compile Include="View\Gui\HumidityView.cs" />
-    <Compile Include="View\Gui\PressureView.cs" />
-    <Compile Include="View\Gui\TemperatureView.cs" />
-    <Compile Include="View\Interfaces\IOutput.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sensor\Sensor.csproj">
-      <Project>{3c8b6176-04a6-401e-aa2a-56001f14b733}</Project>
-      <Name>Sensor</Name>
+    <ProjectReference Include="..\View\View.csproj">
+      <Project>{ba4ced93-a27e-49b4-b6fe-7f153165f7fb}</Project>
+      <Name>View</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

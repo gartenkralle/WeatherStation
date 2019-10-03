@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp
 {
-    partial class Form1
+    partial class Form
     {
         /// <summary>
         /// Required designer variable.
@@ -40,21 +40,21 @@
             // 
             this.tbTemperature.Location = new System.Drawing.Point(237, 139);
             this.tbTemperature.Name = "tbTemperature";
-            this.tbTemperature.Size = new System.Drawing.Size(100, 20);
+            this.tbTemperature.Size = new System.Drawing.Size(161, 20);
             this.tbTemperature.TabIndex = 0;
             // 
             // tbPressure
             // 
             this.tbPressure.Location = new System.Drawing.Point(237, 179);
             this.tbPressure.Name = "tbPressure";
-            this.tbPressure.Size = new System.Drawing.Size(100, 20);
+            this.tbPressure.Size = new System.Drawing.Size(161, 20);
             this.tbPressure.TabIndex = 1;
             // 
             // tbHumidity
             // 
             this.tbHumidity.Location = new System.Drawing.Point(237, 220);
             this.tbHumidity.Name = "tbHumidity";
-            this.tbHumidity.Size = new System.Drawing.Size(100, 20);
+            this.tbHumidity.Size = new System.Drawing.Size(161, 20);
             this.tbHumidity.TabIndex = 2;
             // 
             // lbTemperature
@@ -84,18 +84,18 @@
             this.lbHumidity.TabIndex = 5;
             this.lbHumidity.Text = "Humidity:";
             // 
-            // Form1
+            // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 450);
+            this.ClientSize = new System.Drawing.Size(591, 417);
             this.Controls.Add(this.lbHumidity);
             this.Controls.Add(this.lbPressure);
             this.Controls.Add(this.lbTemperature);
             this.Controls.Add(this.tbHumidity);
             this.Controls.Add(this.tbPressure);
             this.Controls.Add(this.tbTemperature);
-            this.Name = "Form1";
+            this.Name = "Form";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
