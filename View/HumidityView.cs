@@ -7,9 +7,9 @@ namespace WeatherStation.View
 {
     public class HumidityView : IHumidityView
     {
-        private readonly IOutput output;
+        private readonly IConcreteOutput output;
 
-        public HumidityView(IOutput output)
+        public HumidityView(IConcreteOutput output)
         {
             this.output = output;
         }

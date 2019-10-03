@@ -4,11 +4,11 @@ using WeatherStation.View.Interfaces;
 
 namespace WeatherStation.WinFormsOutput
 {
-    public class ControlOutput : IOutput
+    public class ConcreteOutput : IConcreteOutput
     {
         private readonly Control control;
 
-        public ControlOutput(Control control)
+        public ConcreteOutput(Control control)
         {
             this.control = control;
         }

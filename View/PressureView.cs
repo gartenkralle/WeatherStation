@@ -7,9 +7,9 @@ namespace WeatherStation.View
 {
     public class PressureView : IPressureView
     {
-        private readonly IOutput output;
+        private readonly IConcreteOutput output;
 
-        public PressureView(IOutput output)
+        public PressureView(IConcreteOutput output)
         {
             this.output = output;
         }

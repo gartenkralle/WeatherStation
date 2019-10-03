@@ -7,9 +7,9 @@ namespace WeatherStation.View
 {
     public class TemperatureView : ITemperatureView
     {
-        private readonly IOutput output;
+        private readonly IConcreteOutput output;
 
-        public TemperatureView(IOutput output)
+        public TemperatureView(IConcreteOutput output)
         {
             this.output = output;
         }

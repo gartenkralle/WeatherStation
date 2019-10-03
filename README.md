@@ -8,3 +8,6 @@ This prototype is showing:
 - model view controller pattern
 - observer pattern
 - strategy pattern
+
+## Design
+![Class diagram](/_images/classDiagram.png)

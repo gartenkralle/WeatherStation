@@ -1,6 +1,6 @@
 ﻿namespace WeatherStation.View.Interfaces
 {
-    public interface IOutput
+    public interface IConcreteOutput
     {
         void SetText(string s);
     }
