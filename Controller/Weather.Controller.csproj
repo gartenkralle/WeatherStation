@@ -48,7 +48,6 @@
     <Compile Include="Interfaces\View\IHumidityView.cs" />
     <Compile Include="Interfaces\View\IPressureView.cs" />
     <Compile Include="Interfaces\View\ITemperatureView.cs" />
-    <Compile Include="Interfaces\View\IWeatherView.cs" />
     <Compile Include="PressureController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TemperatureController.cs" />
