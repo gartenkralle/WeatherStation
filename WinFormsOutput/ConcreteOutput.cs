@@ -15,10 +15,17 @@ namespace WeatherStation.WinFormsOutput
 
         public void SetText(string s)
         {
-            control.Invoke(new Action(() =>
+            if (control.InvokeRequired)
+            {
+                control.Invoke(new Action(() =>
+                {
+                    control.Text = s;
+                }));
+            }
+            else
             {
                 control.Text = s;
-            }));
+            }
         }
     }
 }
