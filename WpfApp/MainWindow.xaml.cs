@@ -23,9 +23,9 @@ namespace WpfApp
             PressureController pressure = new PressureController(new PressureModel(new PressureSensorAbstraction()));
             HumidityController humidity = new HumidityController(new HumidityModel(new HumiditySensorAbstraction()));
             
-            temperature.Display(new TemperatureView(new ConcreteOutput(Dispatcher, tbTemperature)));
-            pressure.Display(new PressureView(new ConcreteOutput(Dispatcher, tbPressure)));
-            humidity.Display(new HumidityView(new ConcreteOutput(Dispatcher, tbHumidity)));
+            temperature.Display(new TemperatureView(new WpfOutput(Dispatcher, tbTemperature)));
+            pressure.Display(new PressureView(new WpfOutput(Dispatcher, tbPressure)));
+            humidity.Display(new HumidityView(new WpfOutput(Dispatcher, tbHumidity)));
         }
     }
 }

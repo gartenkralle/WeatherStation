@@ -20,9 +20,9 @@ namespace WindowsFormsApp
             PressureController pressure = new PressureController(new PressureModel(new PressureSensorAbstraction()));
             HumidityController humidity = new HumidityController(new HumidityModel(new HumiditySensorAbstraction()));
 
-            temperature.Display(new TemperatureView(new ConcreteOutput(tbTemperature)));
-            pressure.Display(new PressureView(new ConcreteOutput(tbPressure)));
-            humidity.Display(new HumidityView(new ConcreteOutput(tbHumidity)));
+            temperature.Display(new TemperatureView(new WinFormsOutput(tbTemperature)));
+            pressure.Display(new PressureView(new WinFormsOutput(tbPressure)));
+            humidity.Display(new HumidityView(new WinFormsOutput(tbHumidity)));
         }
     }
 }

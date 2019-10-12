@@ -6,12 +6,12 @@ using WeatherStation.View.Interfaces;
 
 namespace WeatherStation.WpfOutput
 {
-    public class ConcreteOutput : IConcreteOutput
+    public class WpfOutput : IConcreteOutput
     {        
         private readonly Dispatcher dispatcher;
         private readonly TextBox textBox;
 
-        public ConcreteOutput(Dispatcher dispatcher, TextBox textBox)
+        public WpfOutput(Dispatcher dispatcher, TextBox textBox)
         {
             this.dispatcher = dispatcher;
             this.textBox = textBox;
