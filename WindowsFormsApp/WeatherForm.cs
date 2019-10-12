@@ -16,9 +16,9 @@ namespace WindowsFormsApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            TemperatureController temperature = new TemperatureController(new TemperatureModel(new TemperatureSensorAbstraction()));
-            PressureController pressure = new PressureController(new PressureModel(new PressureSensorAbstraction()));
-            HumidityController humidity = new HumidityController(new HumidityModel(new HumiditySensorAbstraction()));
+            TemperatureController temperature = new TemperatureController(new TemperatureModel(new TemperatureSensorAbstraction(100)));
+            PressureController pressure = new PressureController(new PressureModel(new PressureSensorAbstraction(100)));
+            HumidityController humidity = new HumidityController(new HumidityModel(new HumiditySensorAbstraction(100)));
 
             temperature.Display(new TemperatureView(new WinFormsOutput(tbTemperature)));
             pressure.Display(new PressureView(new WinFormsOutput(tbPressure)));

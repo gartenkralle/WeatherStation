@@ -17,10 +17,10 @@ namespace WeatherStation.SensorAbstraction
             }
         }
 
-        public TemperatureSensorAbstraction()
+        public TemperatureSensorAbstraction(int pollingIntervall)
         {
             hardware = new Helper.Hardware();
-            hardware.Poll(() => TemperatureSensor.Data, TemperatureChanged);
+            hardware.Poll(() => TemperatureSensor.Data, TemperatureChanged, pollingIntervall);
         }
 
         private void TemperatureChanged(ValueType data)

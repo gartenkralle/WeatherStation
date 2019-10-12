@@ -17,10 +17,10 @@ namespace WeatherStation.SensorAbstraction
             }
         }
 
-        public PressureSensorAbstraction()
+        public PressureSensorAbstraction(int pollingIntervall)
         {
             hardware = new Helper.Hardware();
-            hardware.Poll(() => PressureSensor.Data, PressureChanged);
+            hardware.Poll(() => PressureSensor.Data, PressureChanged, pollingIntervall);
         }
 
         private void PressureChanged(ValueType data)

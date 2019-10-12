@@ -12,6 +12,8 @@ namespace Sensor
 
         static PressureSensor()
         {
+            int delay = 1000;
+
             random = new Random(DateTime.Now.Millisecond);
             Data = random.NextDouble();
 
@@ -20,7 +22,7 @@ namespace Sensor
                 while (true)
                 {
                     Data = random.NextDouble();
-                    Thread.Sleep(1000);
+                    Thread.Sleep(delay);
                 }
             });
         }

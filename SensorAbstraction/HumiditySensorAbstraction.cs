@@ -18,10 +18,10 @@ namespace WeatherStation.SensorAbstraction
             }
         }
 
-        public HumiditySensorAbstraction()
+        public HumiditySensorAbstraction(int pollingIntervall)
         {
             hardware = new Helper.Hardware();
-            hardware.Poll(() => HumiditySensor.Data, Humidity_Changed);
+            hardware.Poll(() => HumiditySensor.Data, Humidity_Changed, pollingIntervall);
         }
 
         private void Humidity_Changed(ValueType data)
