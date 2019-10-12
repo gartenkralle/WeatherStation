@@ -111,7 +111,7 @@
       <Project>{BA4CED93-A27E-49B4-B6FE-7F153165F7FB}</Project>
       <Name>Weather.View</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Weather.WpfOutput\Weather.WpfOutput.csproj">
+    <ProjectReference Include="..\WpfOutput\Weather.WpfOutput.csproj">
       <Project>{5bcb8b7e-8d22-46e9-9079-70b1ded29d31}</Project>
       <Name>Weather.WpfOutput</Name>
     </ProjectReference>

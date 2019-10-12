@@ -1,5 +1,4 @@
-﻿using System.Threading;
-using System.Windows;
+﻿using System.Windows;
 using WeatherStation.Controller;
 using WeatherStation.Model;
 using WeatherStation.SensorAbstraction;
