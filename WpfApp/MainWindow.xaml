@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Loaded="Grid_Loaded">
-        <TextBox x:Name="tbTemperature" HorizontalAlignment="Left" Height="23" Margin="363,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbPressure" HorizontalAlignment="Left" Height="23" Margin="363,182,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbHumidity" HorizontalAlignment="Left" Height="23" Margin="363,246,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbTemperature" HorizontalAlignment="Left" Height="23" Margin="363,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbPressure" HorizontalAlignment="Left" Height="23" Margin="363,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbHumidity" HorizontalAlignment="Left" Height="23" Margin="363,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Temperature:" HorizontalAlignment="Left" Margin="269,122,0,0" VerticalAlignment="Top"/>
         <Label Content="Pressure:" HorizontalAlignment="Left" Margin="269,179,0,0" VerticalAlignment="Top"/>
         <Label Content="Humidity:" HorizontalAlignment="Left" Margin="269,243,0,0" VerticalAlignment="Top"/>
