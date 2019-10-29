@@ -29,13 +29,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD12A9EC-BA13-455D-B5EB-01F3D3686B23}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		_solutionItems\weatherStation.vsdx = _solutionItems\weatherStation.vsdx
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{EA2C4A12-D9B8-48B3-82AF-ECD7AB9D0106}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.WpfOutput", "WpfOutput\Weather.WpfOutput.csproj", "{5BCB8B7E-8D22-46E9-9079-70B1DED29D31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{8C31C7EA-F122-4B76-BD91-76246C44997A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{8C31C7EA-F122-4B76-BD91-76246C44997A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.ConsoleOutput", "ConsoleOutput\Weather.ConsoleOutput.csproj", "{5107A7B5-9894-40C8-88EE-189D307242B3}"
 EndProject
