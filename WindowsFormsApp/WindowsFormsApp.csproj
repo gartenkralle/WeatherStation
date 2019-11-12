@@ -80,25 +80,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Controller\Weather.Controller.csproj">
-      <Project>{57adc03b-c34d-42e5-b0da-4d8b7775cad9}</Project>
+    <ProjectReference Include="..\Input\SensorAbstraction\Weather.SensorAbstraction.csproj">
+      <Project>{A2DAF725-2B15-4F6A-8788-58B8E0DAAA37}</Project>
+      <Name>Weather.SensorAbstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Output\WinFormsOutput\Weather.WinFormsOutput.csproj">
+      <Project>{fc09ec34-d029-48e5-9d77-95f4c5707011}</Project>
+      <Name>Weather.WinFormsOutput</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Process\Controller\Weather.Controller.csproj">
+      <Project>{57ADC03B-C34D-42E5-B0DA-4D8B7775CAD9}</Project>
       <Name>Weather.Controller</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Model\Weather.Model.csproj">
+    <ProjectReference Include="..\Process\Model\Weather.Model.csproj">
       <Project>{B24B8309-BC33-4C60-9CA6-DFAA7D96721C}</Project>
       <Name>Weather.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SensorAbstraction\Weather.SensorAbstraction.csproj">
-      <Project>{a2daf725-2b15-4f6a-8788-58b8e0daaa37}</Project>
-      <Name>Weather.SensorAbstraction</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\View\Weather.View.csproj">
+    <ProjectReference Include="..\Process\View\Weather.View.csproj">
       <Project>{ba4ced93-a27e-49b4-b6fe-7f153165f7fb}</Project>
       <Name>Weather.View</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WinFormsOutput\Weather.WinFormsOutput.csproj">
-      <Project>{fc09ec34-d029-48e5-9d77-95f4c5707011}</Project>
-      <Name>Weather.WinFormsOutput</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

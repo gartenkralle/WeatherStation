@@ -6,11 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleOutput\Weather.ConsoleOutput.csproj" />
-    <ProjectReference Include="..\Controller\Weather.Controller.csproj" />
-    <ProjectReference Include="..\Model\Weather.Model.csproj" />
-    <ProjectReference Include="..\SensorAbstraction\Weather.SensorAbstraction.csproj" />
-    <ProjectReference Include="..\View\Weather.View.csproj" />
+    <ProjectReference Include="..\Input\SensorAbstraction\Weather.SensorAbstraction.csproj" />
+    <ProjectReference Include="..\Output\ConsoleOutput\Weather.ConsoleOutput.csproj" />
+    <ProjectReference Include="..\Process\Controller\Weather.Controller.csproj" />
+    <ProjectReference Include="..\Process\Model\Weather.Model.csproj" />
+    <ProjectReference Include="..\Process\View\Weather.View.csproj" />
   </ItemGroup>
 
 </Project>
