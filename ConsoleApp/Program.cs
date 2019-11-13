@@ -5,7 +5,7 @@ using WeatherStation.Model;
 using WeatherStation.SensorAbstraction;
 using WeatherStation.View;
 
-namespace ConsoleApp
+namespace Program.ConsoleApp
 {
     class Program
     {

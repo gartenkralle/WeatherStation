@@ -5,7 +5,7 @@ using WeatherStation.SensorAbstraction;
 using WeatherStation.View;
 using WeatherStation.WinFormsOutput;
 
-namespace WindowsFormsApp
+namespace Program.WindowsFormsApp
 {
     public partial class WeatherForm : System.Windows.Forms.Form
     {

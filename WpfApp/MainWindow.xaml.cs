@@ -5,7 +5,7 @@ using WeatherStation.SensorAbstraction;
 using WeatherStation.View;
 using WeatherStation.WpfOutput;
 
-namespace WpfApp
+namespace Program.WpfApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp
+﻿namespace Program.WindowsFormsApp
 {
     partial class WeatherForm
     {
