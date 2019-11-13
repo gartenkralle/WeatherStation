@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Input\SensorAbstraction\Weather.SensorAbstraction.csproj" />
+    <ProjectReference Include="..\..\Output\ConsoleOutput\Weather.ConsoleOutput.csproj" />
+    <ProjectReference Include="..\..\Process\Controller\Weather.Controller.csproj" />
+    <ProjectReference Include="..\..\Process\Model\Weather.Model.csproj" />
+    <ProjectReference Include="..\..\Process\View\Weather.View.csproj" />
+  </ItemGroup>
+
+</Project>
