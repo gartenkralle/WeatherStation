@@ -1,10 +1,10 @@
 ﻿using Sensor;
 using System;
-using WeatherStation.Model.Interfaces.SensorAbstraction;
+using WeatherStation.Model.Interfaces.DataAccess;
 
-namespace WeatherStation.SensorAbstraction
+namespace WeatherStation.DataAccess
 {
-    public class PressureSensorAbstraction : IPressureSensorAbstraction
+    public class PressureDataAccess : IPressureDataAccess
     {
         private readonly Helper.Hardware hardware;
         public event Action<ValueType> Changed;
@@ -17,7 +17,7 @@ namespace WeatherStation.SensorAbstraction
             }
         }
 
-        public PressureSensorAbstraction(int pollingIntervall)
+        public PressureDataAccess(int pollingIntervall)
         {
             hardware = new Helper.Hardware();
             hardware.Poll(() => PressureSensor.Data, PressureChanged, pollingIntervall);

@@ -7,8 +7,8 @@
     <ProjectGuid>{5107A7B5-9894-40C8-88EE-189D307242B3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleOutput</RootNamespace>
-    <AssemblyName>ConsoleOutput</AssemblyName>
+    <RootNamespace>Weather.Output.ConsoleOutput</RootNamespace>
+    <AssemblyName>Weather.Output.ConsoleOutput</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

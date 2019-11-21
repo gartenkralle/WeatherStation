@@ -7,8 +7,8 @@
     <ProjectGuid>{5BCB8B7E-8D22-46E9-9079-70B1DED29D31}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Weather.WpfOutput</RootNamespace>
-    <AssemblyName>Weather.WpfOutput</AssemblyName>
+    <RootNamespace>Weather.Output.WpfOutput</RootNamespace>
+    <AssemblyName>Weather.Output.WpfOutput</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

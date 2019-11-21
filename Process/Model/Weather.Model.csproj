@@ -7,8 +7,8 @@
     <ProjectGuid>{B24B8309-BC33-4C60-9CA6-DFAA7D96721C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Model</RootNamespace>
-    <AssemblyName>Model</AssemblyName>
+    <RootNamespace>Weather.Process.Model</RootNamespace>
+    <AssemblyName>Weather.Process.Model</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,9 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HumidityModel.cs" />
-    <Compile Include="Interfaces\SensorAbstraction\IHumiditySensorAbstraction.cs" />
-    <Compile Include="Interfaces\SensorAbstraction\IPressureSensorAbstraction.cs" />
-    <Compile Include="Interfaces\SensorAbstraction\ITemperatureSensorAbstraction.cs" />
+    <Compile Include="Interfaces\DataAccess\IHumidityDataAccess.cs" />
+    <Compile Include="Interfaces\DataAccess\IPressureDataAccess.cs" />
+    <Compile Include="Interfaces\DataAccess\ITemperatureDataAccess.cs" />
     <Compile Include="PressureModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TemperatureModel.cs" />

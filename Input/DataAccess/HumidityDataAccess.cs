@@ -1,10 +1,10 @@
 ﻿using Sensor;
 using System;
-using WeatherStation.Model.Interfaces.SensorAbstraction;
+using WeatherStation.Model.Interfaces.DataAccess;
 
-namespace WeatherStation.SensorAbstraction
+namespace WeatherStation.DataAccess
 {
-    public class HumiditySensorAbstraction : IHumiditySensorAbstraction
+    public class HumidityDataAccess : IHumidityDataAccess
     {
         private readonly Helper.Hardware hardware;
 
@@ -18,7 +18,7 @@ namespace WeatherStation.SensorAbstraction
             }
         }
 
-        public HumiditySensorAbstraction(int pollingIntervall)
+        public HumidityDataAccess(int pollingIntervall)
         {
             hardware = new Helper.Hardware();
             hardware.Poll(() => HumiditySensor.Data, Humidity_Changed, pollingIntervall);

@@ -1,14 +1,14 @@
 ﻿using System;
 using WeatherStation.Controller.Interfaces.Model;
-using WeatherStation.Model.Interfaces.SensorAbstraction;
+using WeatherStation.Model.Interfaces.DataAccess;
 
 namespace WeatherStation.Model
 {
     public class HumidityModel : IHumidityModel
     {
-        private readonly IHumiditySensorAbstraction humidity;
+        private readonly IHumidityDataAccess humidity;
 
-        public HumidityModel(IHumiditySensorAbstraction humidity)
+        public HumidityModel(IHumidityDataAccess humidity)
         {
             this.humidity = humidity;
             humidity.Changed += Humidity_Changed; ;

@@ -7,8 +7,8 @@
     <ProjectGuid>{BA4CED93-A27E-49B4-B6FE-7F153165F7FB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>View</RootNamespace>
-    <AssemblyName>View</AssemblyName>
+    <RootNamespace>Weather.ProcessView</RootNamespace>
+    <AssemblyName>Weather.Process.View</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

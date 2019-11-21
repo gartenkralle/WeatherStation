@@ -1,14 +1,14 @@
 ﻿using System;
 using WeatherStation.Controller.Interfaces.Model;
-using WeatherStation.Model.Interfaces.SensorAbstraction;
+using WeatherStation.Model.Interfaces.DataAccess;
 
 namespace WeatherStation.Model
 {
     public class PressureModel : IPressureModel
     {
-        private readonly IPressureSensorAbstraction pressure;
+        private readonly IPressureDataAccess pressure;
 
-        public PressureModel(IPressureSensorAbstraction pressure)
+        public PressureModel(IPressureDataAccess pressure)
         {
             this.pressure = pressure;
             pressure.Changed += Pressure_Changed; ;
