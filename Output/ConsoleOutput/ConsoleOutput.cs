@@ -5,13 +5,13 @@ namespace WeatherStation.ConsoleOutput
 {
     public class ConsoleOutput : IConcreteOutput
     {
-        private readonly static object writeLineLock;
+        private readonly static object writeLineLock = InitializeWriteLock();
         private readonly string label;
         private readonly int lineNumber;
 
-        static ConsoleOutput()
+        private static object InitializeWriteLock()
         {
-            writeLineLock = new object();
+            return new object();
         }
 
         public ConsoleOutput(int lineNumber, string label)

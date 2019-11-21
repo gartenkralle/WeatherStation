@@ -6,7 +6,7 @@ namespace Sensor
 {
     public static class TemperatureSensor
     {
-        private readonly static Random random;
+        private readonly static Random random = InitializeRandom();
 
         public static double Data { get; private set; }
 
@@ -14,7 +14,6 @@ namespace Sensor
         {
             int delay = 1000;
 
-            random = new Random(DateTime.Now.Millisecond);
             Data = random.NextDouble();
 
             Task.Run(() =>
@@ -25,6 +24,11 @@ namespace Sensor
                     Thread.Sleep(delay);
                 }
             });
+        }
+
+        private static Random InitializeRandom()
+        {
+            return new Random(DateTime.Now.Millisecond);
         }
     }
 }
