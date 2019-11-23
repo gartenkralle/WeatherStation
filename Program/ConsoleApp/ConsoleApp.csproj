@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AssemblyName>Program.ConsoleApp</AssemblyName>
+    <RootNamespace>Program.ConsoleApp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Input\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\..\Output\ConsoleOutput\ConsoleOutput.csproj" />
+    <ProjectReference Include="..\..\Process\Controller\Controller.csproj" />
+    <ProjectReference Include="..\..\Process\Model\Model.csproj" />
+    <ProjectReference Include="..\..\Process\View\View.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{01B5E429-BBAA-464B-B4EF-EAAE2AAE2F98}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Weather.Program.WpfApp</RootNamespace>
-    <AssemblyName>Weather.Program.WpfApp</AssemblyName>
+    <RootNamespace>Program.WpfApp</RootNamespace>
+    <AssemblyName>Program.WpfApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -95,25 +95,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Input\DataAccess\Weather.DataAccess.csproj">
+    <ProjectReference Include="..\..\Input\DataAccess\DataAccess.csproj">
       <Project>{a2daf725-2b15-4f6a-8788-58b8e0daaa37}</Project>
-      <Name>Weather.DataAccess</Name>
+      <Name>DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Output\WpfOutput\Weather.WpfOutput.csproj">
+    <ProjectReference Include="..\..\Output\WpfOutput\WpfOutput.csproj">
       <Project>{5bcb8b7e-8d22-46e9-9079-70b1ded29d31}</Project>
-      <Name>Weather.WpfOutput</Name>
+      <Name>WpfOutput</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Process\Controller\Weather.Controller.csproj">
+    <ProjectReference Include="..\..\Process\Controller\Controller.csproj">
       <Project>{57adc03b-c34d-42e5-b0da-4d8b7775cad9}</Project>
-      <Name>Weather.Controller</Name>
+      <Name>Controller</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Process\Model\Weather.Model.csproj">
+    <ProjectReference Include="..\..\Process\Model\Model.csproj">
       <Project>{B24B8309-BC33-4C60-9CA6-DFAA7D96721C}</Project>
-      <Name>Weather.Model</Name>
+      <Name>Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Process\View\Weather.View.csproj">
+    <ProjectReference Include="..\..\Process\View\View.csproj">
       <Project>{ba4ced93-a27e-49b4-b6fe-7f153165f7fb}</Project>
-      <Name>Weather.View</Name>
+      <Name>View</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

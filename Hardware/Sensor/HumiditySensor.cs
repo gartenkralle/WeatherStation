@@ -2,18 +2,18 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Sensor
+namespace Hardware.Sensor
 {
-    public static class TemperatureSensor
+    public static class HumiditySensor
     {
         private readonly static Random random = InitializeRandom();
 
         public static double Data { get; private set; }
 
-        static TemperatureSensor()
+        static HumiditySensor()
         {
             int delay = 1000;
-
+            
             Data = random.NextDouble();
 
             Task.Run(() =>

@@ -2,15 +2,15 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Sensor
+namespace Hardware.Sensor
 {
-    public static class PressureSensor
+    public static class TemperatureSensor
     {
         private readonly static Random random = InitializeRandom();
 
         public static double Data { get; private set; }
 
-        static PressureSensor()
+        static TemperatureSensor()
         {
             int delay = 1000;
 

@@ -14,29 +14,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Sensor", "Input\Sensor\Weather.Sensor.csproj", "{3C8B6176-04A6-401E-AA2A-56001F14B733}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Process\Controller\Controller.csproj", "{57ADC03B-C34D-42E5-B0DA-4D8B7775CAD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Controller", "Process\Controller\Weather.Controller.csproj", "{57ADC03B-C34D-42E5-B0DA-4D8B7775CAD9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Process\Model\Model.csproj", "{B24B8309-BC33-4C60-9CA6-DFAA7D96721C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Model", "Process\Model\Weather.Model.csproj", "{B24B8309-BC33-4C60-9CA6-DFAA7D96721C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "Process\View\View.csproj", "{BA4CED93-A27E-49B4-B6FE-7F153165F7FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.View", "Process\View\Weather.View.csproj", "{BA4CED93-A27E-49B4-B6FE-7F153165F7FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleOutput", "Output\ConsoleOutput\ConsoleOutput.csproj", "{5107A7B5-9894-40C8-88EE-189D307242B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.ConsoleOutput", "Output\ConsoleOutput\Weather.ConsoleOutput.csproj", "{5107A7B5-9894-40C8-88EE-189D307242B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsOutput", "Output\WinFormsOutput\WinFormsOutput.csproj", "{FC09EC34-D029-48E5-9D77-95F4C5707011}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.WinFormsOutput", "Output\WinFormsOutput\Weather.WinFormsOutput.csproj", "{FC09EC34-D029-48E5-9D77-95F4C5707011}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.WpfOutput", "Output\WpfOutput\Weather.WpfOutput.csproj", "{5BCB8B7E-8D22-46E9-9079-70B1DED29D31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfOutput", "Output\WpfOutput\WpfOutput.csproj", "{5BCB8B7E-8D22-46E9-9079-70B1DED29D31}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Program", "Program", "{1B436104-D601-45C4-9A0C-130D3EB011B6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Program.ConsoleApp", "Program\ConsoleApp\Program.ConsoleApp.csproj", "{431C35DF-060A-4B35-8CF1-1D6B8C4A3083}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "Program\ConsoleApp\ConsoleApp.csproj", "{431C35DF-060A-4B35-8CF1-1D6B8C4A3083}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program.WindowsFormsApp", "Program\WindowsFormsApp\Program.WindowsFormsApp.csproj", "{9A26CE01-1ABA-4065-B421-187466304663}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "Program\WindowsFormsApp\WindowsFormsApp.csproj", "{9A26CE01-1ABA-4065-B421-187466304663}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program.WpfApp", "Program\WpfApp\Program.WpfApp.csproj", "{01B5E429-BBAA-464B-B4EF-EAAE2AAE2F98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "Program\WpfApp\WpfApp.csproj", "{01B5E429-BBAA-464B-B4EF-EAAE2AAE2F98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.DataAccess", "Input\DataAccess\Weather.DataAccess.csproj", "{A2DAF725-2B15-4F6A-8788-58B8E0DAAA37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "Input\DataAccess\DataAccess.csproj", "{A2DAF725-2B15-4F6A-8788-58B8E0DAAA37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hardware", "Hardware", "{71E5DF3F-5FDD-493A-880F-5D7CA143E08A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sensor", "Hardware\Sensor\Sensor.csproj", "{3C8B6176-04A6-401E-AA2A-56001F14B733}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,10 +46,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3C8B6176-04A6-401E-AA2A-56001F14B733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C8B6176-04A6-401E-AA2A-56001F14B733}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C8B6176-04A6-401E-AA2A-56001F14B733}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C8B6176-04A6-401E-AA2A-56001F14B733}.Release|Any CPU.Build.0 = Release|Any CPU
 		{57ADC03B-C34D-42E5-B0DA-4D8B7775CAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{57ADC03B-C34D-42E5-B0DA-4D8B7775CAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57ADC03B-C34D-42E5-B0DA-4D8B7775CAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -88,12 +86,15 @@ Global
 		{A2DAF725-2B15-4F6A-8788-58B8E0DAAA37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2DAF725-2B15-4F6A-8788-58B8E0DAAA37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2DAF725-2B15-4F6A-8788-58B8E0DAAA37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C8B6176-04A6-401E-AA2A-56001F14B733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C8B6176-04A6-401E-AA2A-56001F14B733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C8B6176-04A6-401E-AA2A-56001F14B733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C8B6176-04A6-401E-AA2A-56001F14B733}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{3C8B6176-04A6-401E-AA2A-56001F14B733} = {36423596-FC13-4A67-A514-4886D78DA114}
 		{57ADC03B-C34D-42E5-B0DA-4D8B7775CAD9} = {82D0738F-FC41-4AFE-A7BB-D3E30D899876}
 		{B24B8309-BC33-4C60-9CA6-DFAA7D96721C} = {82D0738F-FC41-4AFE-A7BB-D3E30D899876}
 		{BA4CED93-A27E-49B4-B6FE-7F153165F7FB} = {82D0738F-FC41-4AFE-A7BB-D3E30D899876}
@@ -104,6 +105,7 @@ Global
 		{9A26CE01-1ABA-4065-B421-187466304663} = {1B436104-D601-45C4-9A0C-130D3EB011B6}
 		{01B5E429-BBAA-464B-B4EF-EAAE2AAE2F98} = {1B436104-D601-45C4-9A0C-130D3EB011B6}
 		{A2DAF725-2B15-4F6A-8788-58B8E0DAAA37} = {36423596-FC13-4A67-A514-4886D78DA114}
+		{3C8B6176-04A6-401E-AA2A-56001F14B733} = {71E5DF3F-5FDD-493A-880F-5D7CA143E08A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B8B68747-6D85-4A9E-B36E-BAF2F8C96B93}

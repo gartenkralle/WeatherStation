@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BA4CED93-A27E-49B4-B6FE-7F153165F7FB}</ProjectGuid>
+    <ProjectGuid>{3C8B6176-04A6-401E-AA2A-56001F14B733}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Weather.ProcessView</RootNamespace>
-    <AssemblyName>Weather.Process.View</AssemblyName>
+    <RootNamespace>Hardware.Sensor</RootNamespace>
+    <AssemblyName>Hardware.Sensor</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,17 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HumidityView.cs" />
-    <Compile Include="Interfaces\IConcreteOutput.cs" />
-    <Compile Include="PressureView.cs" />
+    <Compile Include="HumiditySensor.cs" />
+    <Compile Include="PressureSensor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TemperatureView.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Controller\Weather.Controller.csproj">
-      <Project>{57adc03b-c34d-42e5-b0da-4d8b7775cad9}</Project>
-      <Name>Weather.Controller</Name>
-    </ProjectReference>
+    <Compile Include="TemperatureSensor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
