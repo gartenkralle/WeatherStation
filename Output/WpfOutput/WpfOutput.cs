@@ -7,7 +7,7 @@ using WeatherStation.View.Interfaces;
 namespace WeatherStation.WpfOutput
 {
     public class WpfOutput : IConcreteOutput
-    {        
+    {
         private readonly Dispatcher dispatcher;
         private readonly TextBox textBox;
 

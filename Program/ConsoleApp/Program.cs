@@ -1,8 +1,8 @@
 ﻿using System;
 using WeatherStation.ConsoleOutput;
 using WeatherStation.Controller;
-using WeatherStation.Model;
 using WeatherStation.DataAccess;
+using WeatherStation.Model;
 using WeatherStation.View;
 
 namespace Program.ConsoleApp

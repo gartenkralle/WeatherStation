@@ -13,7 +13,7 @@ namespace Hardware.Sensor
         static HumiditySensor()
         {
             int delay = 1000;
-            
+
             Data = random.NextDouble();
 
             Task.Run(() =>

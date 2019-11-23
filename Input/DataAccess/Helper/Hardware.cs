@@ -13,7 +13,7 @@ namespace WeatherStation.DataAccess.Helper
             using (CancellationTokenSource cancellationTokenSource = new CancellationTokenSource())
             {
                 CancellationToken cancellationToken = cancellationTokenSource.Token;
-                
+
                 lastValue = getLastValue();
 
                 Task listener = Task.Factory.StartNew(() =>

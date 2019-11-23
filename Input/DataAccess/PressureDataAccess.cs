@@ -1,5 +1,5 @@
-﻿using System;
-using Hardware.Sensor;
+﻿using Hardware.Sensor;
+using System;
 using WeatherStation.Model.Interfaces.DataAccess;
 
 namespace WeatherStation.DataAccess

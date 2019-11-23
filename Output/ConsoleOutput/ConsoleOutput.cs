@@ -15,7 +15,7 @@ namespace WeatherStation.ConsoleOutput
         }
 
         public ConsoleOutput(int lineNumber, string label)
-        {            
+        {
             this.label = label;
             this.lineNumber = lineNumber;
         }

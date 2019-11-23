@@ -1,7 +1,7 @@
 ﻿using System;
 using WeatherStation.Controller;
-using WeatherStation.Model;
 using WeatherStation.DataAccess;
+using WeatherStation.Model;
 using WeatherStation.View;
 using WeatherStation.WinFormsOutput;
 
