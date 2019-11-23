@@ -4,7 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Threading;
 using WeatherStation.View.Interfaces;
 
-namespace WeatherStation.WpfOutput
+namespace WeatherStation.Output.WpfOutput
 {
     public class WpfOutput : IConcreteOutput
     {

@@ -2,8 +2,8 @@
 using WeatherStation.Controller;
 using WeatherStation.DataAccess;
 using WeatherStation.Model;
+using WeatherStation.Output.WinFormsOutput;
 using WeatherStation.View;
-using WeatherStation.WinFormsOutput;
 
 namespace Program.WindowsFormsApp
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using WeatherStation.View.Interfaces;
 
-namespace WeatherStation.ConsoleOutput
+namespace WeatherStation.Output.ConsoleOutput
 {
     public class ConsoleOutput : IConcreteOutput
     {

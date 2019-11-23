@@ -2,8 +2,8 @@
 using WeatherStation.Controller;
 using WeatherStation.DataAccess;
 using WeatherStation.Model;
+using WeatherStation.Output.WpfOutput;
 using WeatherStation.View;
-using WeatherStation.WpfOutput;
 
 namespace Program.WpfApp
 {

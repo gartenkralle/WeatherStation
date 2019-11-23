@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using WeatherStation.View.Interfaces;
 
-namespace WeatherStation.WinFormsOutput
+namespace WeatherStation.Output.WinFormsOutput
 {
     public class WinFormsOutput : IConcreteOutput
     {
