@@ -1,6 +1,7 @@
 ﻿using Hardware.Sensor;
 using System;
 using WeatherStation.Model.Interfaces.DataAccess;
+using WeatherStation.Shared.Model;
 
 namespace WeatherStation.DataAccess
 {
@@ -8,7 +9,7 @@ namespace WeatherStation.DataAccess
     {
         private readonly Helper.Hardware hardware;
 
-        public event Action<ValueType> Changed;
+        public event EventHandler<SensorDataEventArgs> Changed;
 
         public double Data
         {
@@ -24,9 +25,9 @@ namespace WeatherStation.DataAccess
             hardware.Poll(() => HumiditySensor.Data, Humidity_Changed, pollingIntervall);
         }
 
-        private void Humidity_Changed(ValueType data)
+        private void Humidity_Changed(object sender, SensorDataEventArgs sensorData)
         {
-            Changed?.Invoke(data);
+            Changed?.Invoke(sender, sensorData);
         }
     }
 }

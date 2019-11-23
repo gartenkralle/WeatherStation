@@ -1,6 +1,7 @@
 ﻿using System;
 using WeatherStation.Controller.Interfaces.Model;
 using WeatherStation.Model.Interfaces.DataAccess;
+using WeatherStation.Shared.Model;
 
 namespace WeatherStation.Model
 {
@@ -16,11 +17,11 @@ namespace WeatherStation.Model
 
         public double Data => humidity.Data;
 
-        public event Action<ValueType> Changed;
+        public event EventHandler<SensorDataEventArgs> Changed;
 
-        private void Humidity_Changed(ValueType data)
+        private void Humidity_Changed(object sender, SensorDataEventArgs sensorData)
         {
-            Changed?.Invoke(data);
+            Changed?.Invoke(sender, sensorData);
         }
     }
 }

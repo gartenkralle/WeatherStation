@@ -1,6 +1,6 @@
-﻿using System;
-using WeatherStation.Controller.Interfaces.Model;
+﻿using WeatherStation.Controller.Interfaces.Model;
 using WeatherStation.Controller.Interfaces.View;
+using WeatherStation.Shared.Model;
 using WeatherStation.View.Interfaces;
 
 namespace WeatherStation.View
@@ -21,9 +21,9 @@ namespace WeatherStation.View
             pressure.Changed += Pressure_Changed;
         }
 
-        private void Pressure_Changed(ValueType data)
+        private void Pressure_Changed(object sender, SensorDataEventArgs sensorData)
         {
-            output.SetText(data.ToString());
+            output.SetText(sensorData.Value.ToString());
         }
     }
 }

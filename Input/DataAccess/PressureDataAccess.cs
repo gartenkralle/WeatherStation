@@ -1,13 +1,14 @@
 ﻿using Hardware.Sensor;
 using System;
 using WeatherStation.Model.Interfaces.DataAccess;
+using WeatherStation.Shared.Model;
 
 namespace WeatherStation.DataAccess
 {
     public class PressureDataAccess : IPressureDataAccess
     {
         private readonly Helper.Hardware hardware;
-        public event Action<ValueType> Changed;
+        public event EventHandler<SensorDataEventArgs> Changed;
 
         public double Data
         {
@@ -23,9 +24,9 @@ namespace WeatherStation.DataAccess
             hardware.Poll(() => PressureSensor.Data, PressureChanged, pollingIntervall);
         }
 
-        private void PressureChanged(ValueType data)
+        private void PressureChanged(object sender, SensorDataEventArgs data)
         {
-            Changed?.Invoke(data);
+            Changed?.Invoke(sender, data);
         }
     }
 }

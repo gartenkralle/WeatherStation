@@ -56,6 +56,10 @@
       <Project>{b24b8309-bc33-4c60-9ca6-dfaa7d96721c}</Project>
       <Name>Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Shared\Model\Shared.Model.csproj">
+      <Project>{a74f0c19-944c-4d96-95b2-e486a900f150}</Project>
+      <Name>Shared.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

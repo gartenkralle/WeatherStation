@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using WeatherStation.Shared.Model;
 
 namespace WeatherStation.DataAccess.Helper
 {
@@ -8,7 +9,7 @@ namespace WeatherStation.DataAccess.Helper
     {
         ValueType lastValue;
 
-        public void Poll(Func<ValueType> getLastValue, Action<ValueType> valueChanged, int pollingIntervall)
+        public void Poll(Func<ValueType> getLastValue, EventHandler<SensorDataEventArgs> sensorDataChanged, int pollingIntervall)
         {
             using (CancellationTokenSource cancellationTokenSource = new CancellationTokenSource())
             {
@@ -24,7 +25,7 @@ namespace WeatherStation.DataAccess.Helper
 
                         if (!lastValue.Equals(currentValue))
                         {
-                            valueChanged?.Invoke(currentValue);
+                            sensorDataChanged?.Invoke(this, new SensorDataEventArgs(currentValue));
                         }
 
                         lastValue = currentValue;
