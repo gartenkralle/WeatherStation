@@ -3,7 +3,7 @@ using WeatherStation.Controller.Interfaces.Helper;
 
 namespace WeatherStation.Model.Interfaces.DataAccess
 {
-    public interface ITemperatureDataAccess
+    public interface ISensorDataAccess
     {
         event EventHandler<AbstractSensorDataEventArgs> Changed;
 

@@ -7,9 +7,9 @@ namespace WeatherStation.Model
 {
     public class HumidityModel : IHumidityModel
     {
-        private readonly IHumidityDataAccess humidity;
+        private readonly ISensorDataAccess humidity;
 
-        public HumidityModel(IHumidityDataAccess humidity)
+        public HumidityModel(ISensorDataAccess humidity)
         {
             this.humidity = humidity;
             humidity.Changed += Humidity_Changed; ;

@@ -7,9 +7,9 @@ namespace WeatherStation.Model
 {
     public class PressureModel : IPressureModel
     {
-        private readonly IPressureDataAccess pressure;
+        private readonly ISensorDataAccess pressure;
 
-        public PressureModel(IPressureDataAccess pressure)
+        public PressureModel(ISensorDataAccess pressure)
         {
             this.pressure = pressure;
             pressure.Changed += Pressure_Changed; ;

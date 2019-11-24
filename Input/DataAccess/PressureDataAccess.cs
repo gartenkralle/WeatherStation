@@ -5,7 +5,7 @@ using WeatherStation.Model.Interfaces.DataAccess;
 
 namespace WeatherStation.DataAccess
 {
-    public class PressureDataAccess : IPressureDataAccess
+    public class PressureDataAccess : ISensorDataAccess
     {
         private readonly Helper.Hardware hardware;
         public event EventHandler<AbstractSensorDataEventArgs> Changed;

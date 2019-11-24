@@ -5,7 +5,7 @@ using WeatherStation.Model.Interfaces.DataAccess;
 
 namespace WeatherStation.DataAccess
 {
-    public class HumidityDataAccess : IHumidityDataAccess
+    public class HumidityDataAccess : ISensorDataAccess
     {
         private readonly Helper.Hardware hardware;
 

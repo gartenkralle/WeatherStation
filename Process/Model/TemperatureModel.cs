@@ -7,9 +7,9 @@ namespace WeatherStation.Model
 {
     public class TemperatureModel : ITemperatureModel
     {
-        private readonly ITemperatureDataAccess temperature;
+        private readonly ISensorDataAccess temperature;
 
-        public TemperatureModel(ITemperatureDataAccess temperature)
+        public TemperatureModel(ISensorDataAccess temperature)
         {
             this.temperature = temperature;
             temperature.Changed += Temperature_Changed;
