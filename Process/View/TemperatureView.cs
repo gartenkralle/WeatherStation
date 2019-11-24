@@ -1,6 +1,6 @@
-﻿using WeatherStation.Controller.Interfaces.Model;
+﻿using WeatherStation.Controller.Interfaces.Helper;
+using WeatherStation.Controller.Interfaces.Model;
 using WeatherStation.Controller.Interfaces.View;
-using WeatherStation.Shared.Model;
 using WeatherStation.View.Interfaces;
 
 namespace WeatherStation.View
@@ -21,7 +21,7 @@ namespace WeatherStation.View
             temperature.Changed += Temperature_Changed;
         }
 
-        private void Temperature_Changed(object sender, SensorDataEventArgs sensorData)
+        private void Temperature_Changed(object sender, AbstractSensorDataEventArgs sensorData)
         {
             output.SetText(sensorData.Value.ToString());
         }

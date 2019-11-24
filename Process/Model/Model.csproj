@@ -47,13 +47,10 @@
     <Compile Include="Interfaces\DataAccess\ITemperatureDataAccess.cs" />
     <Compile Include="PressureModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helper\SensorDataEventArgs.cs" />
     <Compile Include="TemperatureModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\Model\Shared.Model.csproj">
-      <Project>{A74F0C19-944C-4D96-95B2-E486A900F150}</Project>
-      <Name>Shared.Model</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Controller\Controller.csproj">
       <Project>{57adc03b-c34d-42e5-b0da-4d8b7775cad9}</Project>
       <Name>Controller</Name>

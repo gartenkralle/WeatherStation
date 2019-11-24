@@ -1,14 +1,14 @@
 ﻿using Hardware.Sensor;
 using System;
+using WeatherStation.Controller.Interfaces.Helper;
 using WeatherStation.Model.Interfaces.DataAccess;
-using WeatherStation.Shared.Model;
 
 namespace WeatherStation.DataAccess
 {
     public class TemperatureDataAccess : ITemperatureDataAccess
     {
         private readonly Helper.Hardware hardware;
-        public event EventHandler<SensorDataEventArgs> Changed;
+        public event EventHandler<AbstractSensorDataEventArgs> Changed;
 
         public double Data
         {
@@ -24,7 +24,7 @@ namespace WeatherStation.DataAccess
             hardware.Poll(() => TemperatureSensor.Data, TemperatureChanged, pollingIntervall);
         }
 
-        private void TemperatureChanged(object sender, SensorDataEventArgs sensorData)
+        private void TemperatureChanged(object sender, AbstractSensorDataEventArgs sensorData)
         {
             Changed?.Invoke(sender, sensorData);
         }

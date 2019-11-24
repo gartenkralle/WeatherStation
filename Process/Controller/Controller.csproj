@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HumidityController.cs" />
+    <Compile Include="Interfaces\Helper\AbstractSensorDataEventArgs.cs" />
     <Compile Include="Interfaces\Model\IHumidityModel.cs" />
     <Compile Include="Interfaces\Model\IPressureModel.cs" />
     <Compile Include="Interfaces\Model\ITemperatureModel.cs" />
@@ -51,12 +52,6 @@
     <Compile Include="PressureController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TemperatureController.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Shared\Model\Shared.Model.csproj">
-      <Project>{A74F0C19-944C-4D96-95B2-E486A900F150}</Project>
-      <Name>Shared.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
