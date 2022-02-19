@@ -10,4 +10,4 @@ This prototype is showing:
 - strategy pattern
 
 ## Design
-![Class diagram](/_images/classDiagram.jpg)
+![Class diagram](/_images/weatherStation.png)
