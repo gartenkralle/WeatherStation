@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>Program.ConsoleApp</AssemblyName>
     <RootNamespace>Program.ConsoleApp</RootNamespace>
   </PropertyGroup>
